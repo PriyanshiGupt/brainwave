@@ -64,21 +64,16 @@ transform: translate(-50%,-50%);
 cursor: pointer; 
 }
 
-	</style>
+</style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function()
 {
 // Getting screen resolutions and positioning the start button
-var width = screen.width - 100;
-var height = screen.height - 200;
+var width = $(window).width() - 100;
+var height = $(window).height() - 200;
 var code = 0;
 var time=0;
-$('#start').css(
-{ 
-"top" : (height/2)+'px', 
-"left" : (width/2)+'px' 
-});
 
 $('#start').click( function()
 {
